@@ -8,28 +8,29 @@ export const BiayaKuliahProvider = ({ children }) => {
     const [kota, setKota] = useState('');
     const [lamaKuliah, setLamaKuliah] = useState(1);
     const [estimasiBiaya, setEstimasiBiaya] = useState(0);
+    const [biayaPerBulan, setBiayaPerBulan] = useState(0);
 
     const biayaKuliahData = {
         'Universitas Indonesia': {
             'Kedokteran': 20000000,
-            'Teknik Elektro': 19908000,
+            'TeknikElektro': 19908000,
             'Akuntansi': 14650000,
             'Matematika': 13360000,
             'Ilmu Hukum': 14000000,
         },
         'Universitas Gadjah Mada': {
             'Kedokteran': 24700000,
-            'Teknik Elektro': 12300000,
+            'TeknikElektro': 12300000,
             'Akuntansi': 9200000,
             'Matematika': 10000000,
-            'Ilmu Hukum': 9200000,
+            'IlmuHukum': 9200000,
         },
         'Universitas Airlangga': {
             'Kedokteran': 2500000,
-            'Teknik Elektro': 12500000,
+            'TeknikElektro': 12500000,
             'Akuntansi': 1000000,
             'Matematika': 10000000,
-            'Ilmu Hukum': 1000000,
+            'IlmuHukum': 1000000,
         }
     };
 
@@ -45,6 +46,7 @@ export const BiayaKuliahProvider = ({ children }) => {
             const biayaHidup = biayaHidupData[kota];
             const totalBiaya = (biayaKuliah + biayaHidup) * lamaKuliah;
             setEstimasiBiaya(totalBiaya);
+            setBiayaPerBulan(totalBiaya / lamaKuliah / 6);
         }
     };
 
@@ -60,6 +62,8 @@ export const BiayaKuliahProvider = ({ children }) => {
             setLamaKuliah,
             estimasiBiaya,
             hitungEstimasi,
+            biayaPerBulan,
+            setBiayaPerBulan,
         }}>
             {children}
         </BiayaKuliahContext.Provider>
