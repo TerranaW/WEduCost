@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
 import { DanaContext } from "../Context/DanaProvider";
+import LogoText from "../assets/logo-text.png";
 
 function LandingPage() {
     const { items1, items2 } = useContext(DanaContext);
 
     return (
         <>
-            <div className="flex flex-col items-center bg-white min-h-screen p-4">
+            <div className="flex flex-col items-center bg-white min-h-screen px-4">
+                <img className="w-32 sm:w-64" src={LogoText} />
                 {/* Header */}
                 <div className="flex justify-center shadow-md rounded-lg p-4 mb-6 w-full max-w-2xl">
                     <img src="https://npr.brightspotcdn.com/dims4/default/cd06fe5/2147483647/strip/true/crop/1392x926+0+0/resize/1760x1170!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F15%2F70%2Fbafd99fa4cb6a51248cde7070bf7%2Fgraduate.jpeg" alt="header" className="w-full rounded-lg" />
@@ -65,7 +67,7 @@ function LandingPage() {
 
                 {/* Card Button */}
                 <button className="bg-white border border-orange-400 text-orange-400 hover:bg-black py-2 px-4 text-sm rounded mb-4">
-                    Selengkapnya →
+                    <Link to="/dana">Selengkapnya →</Link>
                 </button>
             </div >
         </>

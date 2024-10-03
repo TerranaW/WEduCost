@@ -15,7 +15,7 @@ function PageTemplate() {
             <nav className="bg-white border-b-2 flex justify-between items-center sticky top-0">
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex items-center">
-                        <img src={Logo} alt="Logo" className=" h-20 mx-4 md:h-15" />
+                        <img src={Logo} alt="Logo" className=" h-20 mx-4" />
                         <ul className="hidden md:flex items-center space-x-4">
                             <li>
                                 <Link to="/home" className="text-black hover:text-orange-400">Home</Link>
@@ -41,11 +41,11 @@ function PageTemplate() {
                             )}
                         </button>
                     </div>
-                    <div className="flex space-x-4">
+                    <button className="flex space-x-4">
                         <Link to="/logout" className="bg-white text-orange-400 px-3 py-1 rounded hover:bg-black mr-2 border">
-                            LogOut
+                            Log Out
                         </Link>
-                    </div>
+                    </button>
                 </div>
 
                 {/* Menu Mobile */}
