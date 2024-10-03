@@ -16,7 +16,7 @@ export const BiayaKuliahProvider = ({ children }) => {
             'TeknikElektro': 19908000,
             'Akuntansi': 14650000,
             'Matematika': 13360000,
-            'Ilmu Hukum': 14000000,
+            'IlmuHukum': 14000000,
         },
         'Universitas Gadjah Mada': {
             'Kedokteran': 24700000,

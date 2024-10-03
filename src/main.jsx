@@ -4,13 +4,16 @@ import App from './App.jsx'
 import './index.css'
 import { BiayaKuliahProvider } from './Context/BiayaKuliahProvider.jsx';
 import { BrowserRouter } from 'react-router-dom';
+import DanaProvider from './Context/DanaProvider.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <BiayaKuliahProvider>
-      <App />
-    </BiayaKuliahProvider>
+    <DanaProvider>
+      <BiayaKuliahProvider>
+        <App />
+      </BiayaKuliahProvider>
+    </DanaProvider>
   </BrowserRouter>
 
 

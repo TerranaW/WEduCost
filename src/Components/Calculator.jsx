@@ -17,7 +17,7 @@ const Calculator = () => {
     } = useContext(BiayaKuliahContext);
 
     return (
-        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+        <div className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Kalkulator Estimasi Biaya Kuliah</h2>
             <form className="space-y-4">
                 <label className="block">
@@ -58,7 +58,6 @@ const Calculator = () => {
                         type="number"
                         value={lamaKuliah}
                         onChange={(e) => setLamaKuliah(e.target.value)}
-                        min="0"
                         className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                     />
                 </label>
