@@ -44,7 +44,7 @@ export const BiayaKuliahProvider = ({ children }) => {
         if (universitas && jurusan && kota) {
             const biayaKuliah = biayaKuliahData[universitas][jurusan];
             const biayaHidup = biayaHidupData[kota];
-            const totalBiaya = (biayaKuliah + biayaHidup) * lamaKuliah;
+            const totalBiaya = ((biayaKuliah + biayaHidup) * lamaKuliah);
             setEstimasiBiaya(totalBiaya);
             setBiayaPerBulan(totalBiaya / lamaKuliah / 6);
         }

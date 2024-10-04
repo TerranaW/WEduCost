@@ -42,7 +42,7 @@ function PageTemplate() {
                         </button>
                     </div>
                     <button className="flex space-x-4">
-                        <Link to="/logout" className="bg-white text-orange-400 px-3 py-1 rounded hover:bg-black mr-2 border">
+                        <Link to="/login" className="bg-white text-orange-400 px-3 py-1 rounded hover:bg-black mr-2 border">
                             Log Out
                         </Link>
                     </button>

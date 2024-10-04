@@ -4,6 +4,7 @@ import CariDana from './Components/CariDana';
 import PageTemplate from './Components/PageTemplate';
 import { Route, Routes } from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
+import Login from './Components/Login';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/calc" element={<Calculator />} />
           <Route path="/dana" element={<CariDana />} />
         </Route>
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
