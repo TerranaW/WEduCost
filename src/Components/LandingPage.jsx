@@ -25,8 +25,8 @@ function LandingPage() {
                         Dengan <strong>Kalkulator Estimasi Biaya Kuliah</strong>, kamu bisa menghitung perkiraan total biaya kuliah, termasuk UKT, biaya hidup, dan pengeluaran lainnya.
                     </p>
 
-                    <button className="bg-white border border-orange-400 text-orange-400 hover:bg-black py-2 px-4 text-sm rounded mb-4">
-                        <Link to="/calc" className="text-black hover:text-orange-400">Hitung Sekarang</Link>
+                    <button className="text-center bg-orange-500 border border-orange-400 text-white hover:bg-black hover:text-orange-400 py-2 px-4 text-sm rounded mb-4">
+                        <Link to="/calc">Hitung Sekarang</Link>
                     </button>
                 </div>
 

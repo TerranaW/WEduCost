@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { BiayaKuliahContext } from '../Context/BiayaKuliahProvider';
+import { Link } from 'react-router-dom';
 
 const Calculator = () => {
     const {
@@ -84,7 +85,7 @@ const Calculator = () => {
                 <div className="mt-4">
                     {hitungEstimasi && (
                         <>
-                            <p className='text-center mx-4'>Eitss tunggu dulu kamu nggak perlu khawatir , meskipun terkesan mahal kamu masih bisa tetep kuliah loh ! coba deh apply beasiswa.
+                            <p className='text-center mx-4 mb-5'>Eitss tunggu dulu kamu nggak perlu khawatir , meskipun terkesan mahal kamu masih bisa tetep kuliah loh ! coba deh apply beasiswa.
                                 <br /> Eh tapi... beasiswa aja mana cukup? kamu pasti perlu kebutuhan lain maka dari itu kamu bisa cobain juga kerja part-time selain dapet uang saku, kamu juga bisa nambah pengalaman yang keren.
                                 <br /> WEduCost udah sediain untuk kamu info terlengkap seputar beasiswa dan keja part time. Bersama WEduCost, kamu bisa merencanakan keuangan dengan lebih baik dan fokus pada impian akademismu tanpa khawatir!
 
@@ -94,7 +95,7 @@ const Calculator = () => {
                                 onClick={() => console.log("Button clicked!")}
                                 className="w-full py-2 bg-orange-400 text-white font-semibold rounded-md hover:bg-black hover:text-orange-400"
                             >
-                                Temukan Dana
+                                <Link to="/dana">Temukan Dana</Link>
                             </button>
                         </>
                     )}

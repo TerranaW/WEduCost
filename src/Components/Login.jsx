@@ -67,6 +67,7 @@ function Login() {
                             type="email"
                             id="email"
                             name="email"
+                            placeholder="masukkan email anda"
                             value={user.email}
                             onChange={handleInput}
                             required
@@ -81,6 +82,7 @@ function Login() {
                             type="password"
                             id="password"
                             name="password"
+                            placeholder="masukkan"
                             value={user.password}
                             onChange={handleInput}
                             required

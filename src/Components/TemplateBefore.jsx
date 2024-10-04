@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Logo from '../assets/logo-lans.png';
-import LogoFooter from '../assets/logo-text.png';
+import LogoFooter from '../assets/weducost-pot.png';
 import fb from '../assets/fb.png';
 import ig from '../assets/ig.png';
 import wa from '../assets/wa.png';
 
-function PageTemplate() {
+function TemplateBefore() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -44,11 +44,18 @@ function PageTemplate() {
                             )}
                         </button>
                     </div>
-                    <button className="flex space-x-4">
-                        <Link to="/login" className="bg-white text-orange-400 px-3 py-1 rounded hover:bg-black mr-2 border">
-                            Log Out
-                        </Link>
-                    </button>
+                    <div className='flex justify-between'>
+                        <button className="flex space-x-4">
+                            <Link to="/home" className="bg-white text-orange-400 px-3 py-1 rounded hover:bg-black mr-2 border text-center">
+                                Sign Up
+                            </Link>
+                        </button>
+                        <button className="flex space-x-4">
+                            <Link to="/login" className="bg-orange-600 text-white px-3 py-1 rounded hover:bg-black hover:text-orange-400 mr-2 border text-center">
+                                Log in
+                            </Link>
+                        </button>
+                    </div>
                 </div>
 
                 {/* Menu Mobile */}
@@ -90,4 +97,4 @@ function PageTemplate() {
     );
 }
 
-export default PageTemplate;
+export default TemplateBefore;
