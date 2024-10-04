@@ -21,7 +21,8 @@ function CariDana() {
                             <img className="w-full h-40 object-cover" src={item.image} alt={item.title} />
                             <div className="p-2 text-center font-semibold text-sm">{item.title}</div>
                             <div className="text-gray-500 text-center font-light text-xs">{item.desc}</div>
-                            <div className="text-end text-xs font-medium flex justify-end items-end pt-2 pr-2 hover:text-orange-500 hover:font-bold cursor-pointer">DETAIL</div>
+                            <div className="text-end text-xs font-medium flex justify-end items-end pt-2 pr-2 hover:text-orange-500 hover:font-bold cursor-pointer">
+                                <a href={item.url} target="_blank" rel="noopener noreferrer">DETAIL</a></div>
                         </div>
                     ))}
                 </div>
@@ -47,7 +48,9 @@ function CariDana() {
                             <img className="w-full h-40 object-cover" src={item.image} alt={item.title} />
                             <div className="p-2 text-center font-semibold text-sm">{item.title}</div>
                             <div className="text-gray-500 text-center font-light text-xs text-wrap">{item.desc}</div>
-                            <div className="text-end text-xs font-medium flex justify-end items-end pt-2 pr-2 hover:text-orange-500 hover:font-bold cursor-pointer">DETAIL</div>
+                            <div className="text-end text-xs font-medium flex justify-end items-end pt-2 pr-2 hover:text-orange-500 hover:font-bold cursor-pointer">
+                                <a href={item.url} target="_blank" rel="noopener noreferrer">DETAIL</a>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -56,7 +59,7 @@ function CariDana() {
                 <button className="bg-white border-orange-400 border-2 text-orange-400 hover:bg-black py-1 px-3 text-sm rounded mb-4">
                     Selengkapnya →
                 </button>
-            </div>
+            </div >
         </>
     );
 }

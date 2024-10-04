@@ -48,7 +48,7 @@ function LandingPage() {
                             <div className="p-2 text-center font-semibold text-sm">{item.title}</div>
                             <div className="text-gray-500 text-center font-light text-xs">{item.desc}</div>
                             <div className="mt-auto text-end text-xs font-medium flex justify-end items-end pt-2 pr-2 hover:text-orange-500 hover:font-bold cursor-pointer mx-2 my-2">
-                                DETAIL
+                                <a href={item.url} target="_blank" rel="noopener noreferrer">DETAIL</a>
                             </div>
                         </div>
                     ))}
@@ -59,7 +59,7 @@ function LandingPage() {
                             <div className="p-2 text-center font-semibold text-sm">{item.title}</div>
                             <div className="text-gray-500 text-center font-light text-xs">{item.desc}</div>
                             <div className=" text-end text-xs font-medium flex justify-end items-end pt-5 pr-2 hover:text-orange-500 hover:font-bold cursor-pointer mb-2">
-                                DETAIL
+                                <a href={item.url} target="_blank" rel="noopener noreferrer">DETAIL</a>
                             </div>
                         </div>
                     ))}
